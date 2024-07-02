@@ -1,0 +1,1 @@
+numbered prefix start after upstream init files: https://github.com/timescale/timescaledb-docker/tree/main/docker-entrypoint-initdb.d
