@@ -1,0 +1,19 @@
+name: timescaledb-postgis
+
+on:
+  push:
+    paths:
+    - Dockerfile
+
+jobs:
+  deploy:
+    name: build and push image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: docker login
+        run: echo "${{ secrets.DOCKER_TOKEN }}" | docker login -u mxfactorial --password-stdin
+      - name: docker build
+        run: make
+      - name: docker push
+        run: make push
