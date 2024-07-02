@@ -1,4 +1,4 @@
-FROM timescale/timescaledb:latest-pg16
+FROM timescale/timescaledb:2.15.2-pg16
 # adapted from https://github.com/timescale/timescaledb-docker/blob/d31d31a66626e9dc491a440aa1b74c0c37e2aa54/postgis/Dockerfile
 ENV POSTGIS_VERSION 3.4.2
 
