@@ -50,3 +50,5 @@ RUN set -ex \
     && cd / \
     && rm -rf /tmp/postgis-${POSTGIS_VERSION} \
     && apk del .fetch-deps .build-deps .build-deps-edge
+
+COPY docker-entrypoint-initdb.d/002_add_postgis.sh /docker-entrypoint-initdb.d/002_add_postgis.sh
