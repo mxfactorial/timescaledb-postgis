@@ -2,7 +2,7 @@ the timescaledb-postgis image is [discontinued](https://github.com/timescale/tim
 
 the [timescale/timescaledb-ha](https://hub.docker.com/r/timescale/timescaledb-ha/tags) docker image includes postgis but has a size of **1.5gb**
 
-the size of this [mxfactorial/timescaledb-postgis:latest](https://hub.docker.com/r/mxfactorial/timescaledb-postgis) image is approximately **221mb**
+the size of this [mxfactorial/timescaledb-postgis:latest](https://hub.docker.com/r/mxfactorial/timescaledb-postgis) image is approximately **268mb**
 
 development only
 
