@@ -2,7 +2,7 @@ the timescaledb-postgis image is [discontinued](https://github.com/timescale/tim
 
 the [timescale/timescaledb-ha](https://hub.docker.com/r/timescale/timescaledb-ha/tags) docker image includes postgis but has a size of **1.5gb**
 
-the size of this [mxfactorial/timescaledb-postgis:latest](https://hub.docker.com/r/mxfactorial/timescaledb-postgis) image is approximately **221mb**
+the size of this [mxfactorial/timescaledb-postgis:latest](https://hub.docker.com/r/mxfactorial/timescaledb-postgis) image is approximately **268mb**
 
 development only
 
@@ -21,11 +21,9 @@ make
 ```sh
 # 1. start the container
 docker run -d -it -p 5432:5432 --name timescaledb-postgis -e POSTGRES_PASSWORD=password mxfactorial/timescaledb-postgis:latest
-# 2. install the postgis extension
-docker exec -e PGPASSWORD=password timescaledb-postgis psql -h localhost -U postgres -c "CREATE EXTENSION postgis;"
-# 3. print currently installed extensions
+# 2. print currently installed extensions
 docker exec -e PGPASSWORD=password timescaledb-postgis psql -h localhost -U postgres -c "\dx;"
-# 4. connect using your preferred client
+# 3. connect using your preferred client
 ```
 
 #### clean up
